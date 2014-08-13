@@ -1,0 +1,91 @@
+\hypertarget{IO_8h}{\section{I\-O.\-h File Reference}
+\label{IO_8h}\index{I\-O.\-h@{I\-O.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{IO_8h_abccd1ebefe972f0b141a85b0e86c1848}{write\-File} (char $\ast$final\-Array, char $\ast$file\-Name, int \hyperlink{pacman_8c_acd6fadd46c518affe7761e1d0d1b4027}{rows}, int \hyperlink{pacman_8c_a62277637634b123da4ee5cf0425c9d11}{cols}, bool create\-Map)
+\item 
+void \hyperlink{IO_8h_a7f662b05d21305946a65f4a1bb00d09f}{write\-Map} (char $\ast$\hyperlink{pacman_8c_a2adaedd4f32b8b12c0324574d4810dde}{edit\-Array}, char $\ast$file\-Name, int \hyperlink{pacman_8c_acd6fadd46c518affe7761e1d0d1b4027}{rows}, int \hyperlink{pacman_8c_a62277637634b123da4ee5cf0425c9d11}{cols}, bool create\-Map)
+\item 
+char $\ast$ \hyperlink{IO_8h_aa9a424fa4d5c13f9262b08fd461068a4}{read\-File} (char $\ast$file\-Name)
+\item 
+void \hyperlink{IO_8h_afe0880cb762ed9663edb670d03d58a2a}{draw\-Map} (char $\ast$full\-Name, int \hyperlink{pacman_8c_afb52e720f5f0c483db5861f9e42e924e}{col}, int \hyperlink{pacman_8c_af1d3cff2e4538e23400e260bae3dadad}{row})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{IO_8h_afe0880cb762ed9663edb670d03d58a2a}{\index{I\-O.\-h@{I\-O.\-h}!draw\-Map@{draw\-Map}}
+\index{draw\-Map@{draw\-Map}!IO.h@{I\-O.\-h}}
+\subsubsection[{draw\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Map (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{full\-Name, }
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}}\label{IO_8h_afe0880cb762ed9663edb670d03d58a2a}
+draw map by read each character in the .pac file and also use col and row to calculate then align the map in center of the screen 
+\begin{DoxyParams}{Parameters}
+{\em full\-Name} & is the file's path is passed from above \hyperlink{IO_8c_aa9a424fa4d5c13f9262b08fd461068a4}{read\-File()} method \\
+\hline
+{\em col} & is passed from above \hyperlink{IO_8c_aa9a424fa4d5c13f9262b08fd461068a4}{read\-File()} method \\
+\hline
+{\em row} & is passed from above \hyperlink{IO_8c_aa9a424fa4d5c13f9262b08fd461068a4}{read\-File()} method \\
+\hline
+\end{DoxyParams}
+\hypertarget{IO_8h_aa9a424fa4d5c13f9262b08fd461068a4}{\index{I\-O.\-h@{I\-O.\-h}!read\-File@{read\-File}}
+\index{read\-File@{read\-File}!IO.h@{I\-O.\-h}}
+\subsubsection[{read\-File}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ read\-File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{IO_8h_aa9a424fa4d5c13f9262b08fd461068a4}
+read file with file name from user input, also create an array then put all file name, rows, cols, map into that array then return to main class \hyperlink{pacman_8c}{pacman.\-c} display authors, title, rows and cols to the screen 
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & is received from user input \\
+\hline
+\end{DoxyParams}
+\hypertarget{IO_8h_abccd1ebefe972f0b141a85b0e86c1848}{\index{I\-O.\-h@{I\-O.\-h}!write\-File@{write\-File}}
+\index{write\-File@{write\-File}!IO.h@{I\-O.\-h}}
+\subsubsection[{write\-File}]{\setlength{\rightskip}{0pt plus 5cm}void write\-File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{final\-Array, }
+\item[{char $\ast$}]{file\-Name, }
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{bool}]{create\-Map}
+\end{DoxyParamCaption}
+)}}\label{IO_8h_abccd1ebefe972f0b141a85b0e86c1848}
+add function take left node, right node and pointer to the error string then return the double value write a file by using all elements in array and file name from user input or previous file name from read file 
+\begin{DoxyParams}{Parameters}
+{\em final\-Array} & is received from below \hyperlink{IO_8c_a7f662b05d21305946a65f4a1bb00d09f}{write\-Map()} method \\
+\hline
+{\em file\-Name} & is received from user input or read from .pac file \\
+\hline
+{\em rows} & \& cols are read from .pac file \\
+\hline
+{\em create\-Map} & is check to write normal map or blank map \\
+\hline
+\end{DoxyParams}
+\hypertarget{IO_8h_a7f662b05d21305946a65f4a1bb00d09f}{\index{I\-O.\-h@{I\-O.\-h}!write\-Map@{write\-Map}}
+\index{write\-Map@{write\-Map}!IO.h@{I\-O.\-h}}
+\subsubsection[{write\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void write\-Map (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{edit\-Array, }
+\item[{char $\ast$}]{file\-Name, }
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{bool}]{create\-Map}
+\end{DoxyParamCaption}
+)}}\label{IO_8h_a7f662b05d21305946a65f4a1bb00d09f}
+create final\-Array by allocate heap memory and assign all elements in edit\-Array to final\-Array 
+\begin{DoxyParams}{Parameters}
+{\em edit\-Array} & is received from main class \hyperlink{pacman_8c}{pacman.\-c} \\
+\hline
+{\em file\-Name} & is received from user input or read from .pac file \\
+\hline
+{\em rows} & \& cols are read from .pac file \\
+\hline
+{\em create\-Map} & is check to write normal map or blank map \\
+\hline
+\end{DoxyParams}

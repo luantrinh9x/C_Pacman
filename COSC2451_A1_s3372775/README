@@ -1,0 +1,58 @@
+/////////////////////////////////////////////////////////////////////////
+
+ID: s3372775
+Name: Trinh Luan
+
+ID: s3372748
+Name: Cao Phi Hung
+
+/////////////////////////////////////////////////////////////////////////
+
+DO THIS BEFORE RUN THE PROGRAM
+
+Before compile the program, you need to right click on the pacman.sh 
+file then go to Permissions tab and change the following option:
+
+Access -> Read & Write
+Others -> Read & Write
+Stick on Allow this file to run as a program
+
+/////////////////////////////////////////////////////////////////////////
+
+FOR CREATE NEW MAP
+
+When you type n filename.pac rows cols, after validate the row and col
+then the map will be created. Next, you read that map and you will see the
+border on the screen. Now you can draw a map inside the border. For example,
+
+*************************
+*//draw here            *
+*                       *
+*                       *
+*************************
+
+/////////////////////////////////////////////////////////////////////////
+
+FOR EDIT MAP
+
+If you edit outside the row's length or col's length then all of that will be ignore
+For example, the map with 3 rows and 5 cols, if you edit row number 4 or col number 6,
+all of that will be ignore and will not be saved into the map.
+
+/////////////////////////////////////////////////////////////////////////
+
+REFERENCES
+
+//ncurses
+http://invisible-island.net/ncurses/ncurses-intro.html
+http://hughm.cs.ukzn.ac.za/~murrellh/os/notes/ncurses.html
+http://www.melvilletheatre.com/articles/ncurses-extended-characters/index.html
+http://ific.uv.es/informatica/manuales/php/ref.ncurses.html
+http://modman.unixdev.net/?sektion=3&page=delch&manpath=SunOS-4.1.3
+
+//clear char array
+http://stackoverflow.com/questions/632846/clearing-a-char-array-c
+
+//write and read file
+http://stackoverflow.com/questions/11573974/write-to-txt-file
+http://www.cprogramming.com/tutorial/cfileio.ht
